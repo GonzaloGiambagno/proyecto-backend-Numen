@@ -2,8 +2,7 @@
 Proyecto final de backend  - Base de datos mongodb
 
 El  proyecto  consiste  en  desarrollar  un  servidor  en  Node  que  utilice  rutas  con  sus 
-respectivos métodos HTTP para la comunicación con la base de datos. Además, tendrá 
-los siguientes requisitos.
+respectivos métodos HTTP para la comunicación con la base de datos. 
 
 En este proyecto aprendi: 
 - Crear una base de datos propria y usar MongoDB Compass
