@@ -8,11 +8,10 @@ router.get('/seeCars', controllers.getCars);
 router.post('/addCars', [
     check('marca').custom(carExistente,validarocampos),
     check('modelo').custom(carExistente,validarocampos)
-], controllers.getCars);
+], controllers.postCar);
 
-router.put('/modifyCars/:id', controllers.putCar),
-router.delete('/deleteCars/:id', controllers.deleteCar),
-
+router.put('/modifyCar/:id', controllers.putCar),
+router.delete('/deleteCar/:id', controllers.deleteCar),
 
 
 module.exports = router;
