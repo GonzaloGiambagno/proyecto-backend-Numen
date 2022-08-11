@@ -13,5 +13,7 @@ router.post('/addCars', [
 router.put('/modifyCar/:id', controllers.putCar),
 router.delete('/deleteCar/:id', controllers.deleteCar),
 
+//api externa de rickanmorty, se puede probar con /rickandmorty/charter 
+router.get('/rickandmorty/:name',controllers.apiExterna)
 
 module.exports = router;

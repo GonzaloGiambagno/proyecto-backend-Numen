@@ -45,6 +45,16 @@ const controllers = {
             msg: 'Producto dado de baja',
             car
         })
+    },
+
+    apiExterna: async (req, res) => {
+        try {
+            const respuesta = await axios.get("https://rickandmortyapi.com/api/"+req.params.name)
+            res.json({status:respuesta.status,data:respuesta.data});
+            console.log("Funciona!");
+        } catch (error) {
+            res.json({status:error.response.status,data:error.response.data})
+        }
     }
 
 }
